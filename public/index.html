@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Interaction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css"></link>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="welcomePage" class="container blueContainer text-center">
+        <div class="mt-5">Welcome! Please choose to Host or Join</div>
+        <div><button type="button" class="btn btn-primary mt-5" onclick="clicked('host')">Host meeting</button></div>
+        <div><button type="button" class="btn btn-secondary mt-2" onclick="clicked('client')">Join meeting</button></div>
+    </div>
+    <div id="layout" class="container text-center justify-content-center videoContainer">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 text-center"><h2>Virtual Interaction Demo</h2></div>
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                <div id="mainVideo" class="embed-responsive embed-responsive-16by9 relative">
+                    <video class="embed-responsive-item"></video>
+                    <!-- <div id="peerDiv" class="absolute">
+                    
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>

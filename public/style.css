@@ -1,0 +1,55 @@
+.blueContainer{
+  border: 2px solid blue;
+  background-color: rgb(216, 213, 213);
+  height: 250px;
+  width: 400px;
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+}
+
+.greenContainer{
+  border: 5px solid green;
+}
+
+
+div.videoContainer {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+} 
+
+
+div.relative {
+    position: relative;
+    top:0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;	
+	  margin: auto;
+    border: 5px solid rgb(15, 117, 148);
+  } 
+
+  div.relative video{
+    width: 100% !important;
+    height: 100% !important;
+  }
+#mainVideo{
+  background-color: grey;
+}
+  
+  div.absoluteCls {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    width: 150px;
+    height: 100px;
+    border: 3px solid #73AD21;
+  }
